@@ -1,6 +1,15 @@
-function defaultTask(cb) {
-  // place code for your default task here
-  cb();
-}
+const gulp = require('gulp');
 
-exports.default = defaultTask;
+/*
+    - top level functions
+        - gulp.task - Define tasks
+        - gulp.src - Point to files to use
+        - gulp.dest - Point to folders to output
+        - gulp.watch - Watch files for changes
+*/
+
+// Logs message
+gulp.task('message', function(done) {
+    console.log('Gulp is running...');
+    done();
+});
