@@ -13,3 +13,10 @@ gulp.task('message', function(done) {
     console.log('Gulp is running...');
     done();
 });
+
+// Copy all HTML files
+gulp.task('copyHtml', function(done) {
+    gulp.src('src/*.html')
+        .pipe(gulp.dest('dist'));
+    done();
+});
